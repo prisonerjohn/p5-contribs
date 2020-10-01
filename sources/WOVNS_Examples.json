@@ -1,8 +1,6 @@
 {
   "name": "WOVNS Examples",
-  "categories": [
-    ""
-  ],
+  "categories": null,
   "authors": [
     "[David Mellis](http://web.media.mit.edu/~mellis/) for [WOVNS](http://wovns.com/)"
   ],

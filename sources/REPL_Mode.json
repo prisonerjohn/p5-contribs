@@ -10,9 +10,7 @@
   "lastUpdated": "1443120511000",
   "id": "162",
   "type": "mode",
-  "categories": [
-    ""
-  ],
+  "categories": null,
   "packages": [
     {
       "mode": "java",

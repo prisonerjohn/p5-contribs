@@ -4,9 +4,7 @@
     "[Devon Rifkin](http://drifkin.net)"
   ],
   "url": "http://drifkin.net/processing/beziereditor",
-  "categories": [
-    ""
-  ],
+  "categories": null,
   "sentence": "Draw B\u00e9zier curves visually and then automatically generate Processing code to include in your sketches.",
   "paragraph": "",
   "id": "114",

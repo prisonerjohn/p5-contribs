@@ -8,9 +8,7 @@
   "paragraph": "",
   "id": "169",
   "type": "mode",
-  "categories": [
-    ""
-  ],
+  "categories": null,
   "packages": [
     {
       "mode": "java",

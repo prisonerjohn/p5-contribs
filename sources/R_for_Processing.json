@@ -10,9 +10,7 @@
   "minVersion": "260",
   "id": "220",
   "type": "mode",
-  "categories": [
-    ""
-  ],
+  "categories": null,
   "packages": [
     {
       "mode": "java",

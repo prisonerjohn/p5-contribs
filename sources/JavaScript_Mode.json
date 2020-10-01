@@ -8,9 +8,7 @@
   "paragraph": "JavaScript Mode is based on Processing.js. It runs through a server and contains a simple template system.",
   "id": "087",
   "type": "mode",
-  "categories": [
-    ""
-  ],
+  "categories": null,
   "packages": [
     {
       "mode": "java",

@@ -109,11 +109,13 @@ def format_exports(exports):
   if 'authors' in exports:
     exports['authors'] = [exports['authors']]
 
-  if 'categories' in exports:
+  if 'categories' in exports and exports['categories']:
     categories = exports['categories'].split(',')
     for cat in categories:
       cat.strip()
     exports['categories'] = categories
+  else:
+    exports['categories'] = None
   
   package_java = { }
   package_java['mode'] = 'java'

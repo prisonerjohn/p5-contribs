@@ -9,9 +9,7 @@
   "imports": "processing.mode.java.JavaMode",
   "id": "101",
   "type": "mode",
-  "categories": [
-    ""
-  ],
+  "categories": null,
   "packages": [
     {
       "mode": "java",
