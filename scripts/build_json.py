@@ -45,7 +45,7 @@ This script takes two arguments
          
 If no arguments are passed, it uses the following defaults
   Arg 1: sources.conf
-  Arg 2: .
+  Arg 2: ../sources/
 """
 
 from sys import argv
