@@ -29,10 +29,16 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
-      - name: Build contributions file with default params
+      - name: Build contributions file for PDE with default params
         run: |
           cd scripts
           python build_contribs.py
+          cd ..
+      - name: Build JSON files for website with default params
+        run: |
+          cd scripts
+          python build_json.py
+          cd ..
       - name: Check if there are changes
         id: changes
         uses: UnicornGlobal/has-changes-action@v1.0.11
@@ -42,5 +48,5 @@ jobs:
           git config --global user.name 'P5 Robot'
           git config --global user.email 'p5-bot@users.noreply.github.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git commit -am "Update contributions [skip ci]"
+          git commit -am "chore(ci): update contributions [skip ci]"
           git push
