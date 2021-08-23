@@ -192,6 +192,21 @@ type=library
 download=http://maxlfarrell.gitlab.io/extruder/extruder.zip
 
 library
+name=Everything Will Be IK
+authors=[Eron Gjoni](https://github.com/EGjoni/)
+url=https://github.com/EGjoni/Everything-Will-Be-IK-Processing
+categories=3D,Animation,Simulation
+sentence=A robust Inverse Kinematics Library for Processing.
+paragraph=Features: Highly Stable, Orientation AND position based targets (6-DOF), Multiple end-effector support, Intermediary effector support, Dampening (stiffness control), Highly versatile 3-DOF constraints with arbitrarily shaped orientation regions.
+version=7
+prettyVersion=3.0.4
+minRevision=0
+maxRevision=0
+id=244
+type=library
+download=http://giftedapprentice.com/ewbIK/ewbIK.zip
+
+library
 name=nub
 authors=[Jean Pierre Charalambos](https://visualcomputing.github.io/)
 url=https://github.com/VisualComputing/nub
@@ -528,7 +543,7 @@ authors=[Raphael de Courville](https://vimeo.com/sableraf/)
 url=https://github.com/SableRaf/signalfilter
 categories=Data
 sentence=Filter noisy and jittery signals.
-paragraph=OneEuroFilter for Processing based on the Java implementation by StŽphane Conversy.
+paragraph=OneEuroFilter for Processing based on the Java implementation by StÅ½phane Conversy.
 version=1
 prettyVersion=1.0.0
 id=115
@@ -860,8 +875,8 @@ url=http://www.lagers.org.uk/g4p
 categories=GUI
 sentence=Provides a set of 2D GUI controls and multiple window support.
 paragraph=Controls include buttons, sliders, knobs, labels, textfields, timers, combo boxes, option buttons etc. and multiple windows.  [G4P GUI builder](http://www.lagers.org.uk/g4ptool/index.html) is a companion tool that enables the rapid (visual) development of user interfaces with this library.
-version=45
-prettyVersion=4.3.6
+version=46
+prettyVersion=4.3.7
 minRevision=0245
 maxRevision=0
 id=046
@@ -930,7 +945,7 @@ download=https://github.com/BillKujawa/meter/releases/download/latest/meter.zip
 
 library
 name=UiBooster
-authors=[Nick 'Milchreis' Müller](http://github.com/milchreis)
+authors=[Nick 'Milchreis' MÃ¼ller](http://github.com/milchreis)
 url=http://github.com/milchreis/uibooster-for-processing
 categories=GUI
 sentence=Creates fast and easy GUI components for your sketch.
@@ -2490,21 +2505,6 @@ maxRevision=0
 download=http://www.v3ga.net/processing/BlobDetection/blobDetection.zip
 
 library
-name=Syphon
-authors=[Andres Colubri](http://andrescolubri.net/), [Tom Butterworth](http://kriss.cx/tom), [Anton Marini](http://vade.info/)
-url=https://github.com/Syphon/Processing
-categories=Video & Vision
-sentence=This library allows the sharing of video and images between applications in macOS using the Syphon framework.
-paragraph=Syphon is an open source macOS technology that allows applications to share frames - full frame rate video or stills - with one another in realtime. This library wraps Syphon using Java and provides a simple interface for frame sharing in Processing.
-version=8
-prettyVersion=3
-minRevision=249
-maxRevision=0
-id=041
-type=library
-download=https://github.com/Syphon/Processing/releases/latest/download/Syphon.zip
-
-library
 name=OpenCV for Processing
 authors=[Greg Borenstein](http://gregborenstein.com)
 url=https://github.com/atduskgreg/opencv-processing
@@ -2627,7 +2627,7 @@ download=https://github.com/nyatla/NyARToolkit-for-Processing/releases/download/
 
 library
 name=Image processing algorithms
-authors=[Nick 'Milchreis' Müller](http://github.com/milchreis)
+authors=[Nick 'Milchreis' MÃ¼ller](http://github.com/milchreis)
 url=http://github.com/milchreis/processing-imageprocessing
 categories=Video & Vision
 sentence=Implementations of basic image processing algorithms for processing.
