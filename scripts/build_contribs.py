@@ -169,7 +169,7 @@ if __name__ == "__main__":
   if len(argv) == 1:
     script = argv
     conf = 'sources.conf'
-    fileout = 'pde/contribs.txt'
+    fileout = '../pde/contribs.txt'
     minrev = 228
     maxrev = 0
   elif len(argv) == 3:
