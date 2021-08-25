@@ -2159,21 +2159,6 @@ type=library
 download=https://raw.githubusercontent.com/nok/onedollar-unistroke-recognizer/master/download/OneDollarUnistrokeRecognizer.zip
 
 library
-name=Dawesome Toolkit
-authors=[Brendan Dawes](http://www.brendandawes.com/)
-url=http://cloud.brendandawes.com/dawesometoolkit/
-categories=Utilities
-sentence=Convenient utilities for some everyday tasks including simple layout using grids, lat lon distance calculation, creating patterns with a Vogel spiral, color pallete generation, displaying guides, simple debug panel as well as useful PVector list manipulation.
-paragraph=
-version=10
-prettyVersion=0.9
-minRevision=227
-id=080
-type=library
-maxRevision=0
-download=http://cloud.brendandawes.com/dawesometoolkit/dawesometoolkit.zip
-
-library
 name=TimedEvents
 authors=[Jason Gessner](http://multiply.org/)
 url=http://multiply.org/processing/
