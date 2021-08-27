@@ -42,7 +42,7 @@ jobs:
       - name: Check if there are changes
         id: changes
         uses: UnicornGlobal/has-changes-action@v1.0.11
-      - name: Process changes
+      - name: Push changes back to repo
         if: steps.changes.outputs.changed == 1
         run: |
           git config --global user.name 'P5 Robot'
@@ -50,3 +50,13 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git commit -am "chore(ci): update contributions [skip ci]"
           git push
+      - name: Deploy changes to web
+        if: steps.changes.outputs.changed == 1
+        uses: wlixcc/SFTP-Deploy-Action@v1.0
+        with:
+          username: ${{ secrets.DEPLOY_USER }} 
+          server: ${{ secrets.DEPLOY_HOST }} 
+          ssh_private_key: ${{ secrets.DEPLOY_SSH_KEY }} 
+          local_path: './pde/*'
+          remote_path: '/var/www/download/contribs'
+          args: '-o ConnectTimeout=5'
