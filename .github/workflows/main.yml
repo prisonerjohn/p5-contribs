@@ -52,11 +52,10 @@ jobs:
           git push
       - name: Deploy changes to web
         if: steps.changes.outputs.changed == 1
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
-        with:
-          username: ${{ secrets.DEPLOY_USER }} 
-          server: ${{ secrets.DEPLOY_HOST }} 
-          ssh_private_key: ${{ secrets.DEPLOY_SSH_KEY }} 
-          local_path: './pde/*'
-          remote_path: '/var/www/download/contribs'
-          args: '-o ConnectTimeout=5'
+        run: |
+          mkdir ~/.ssh
+          ssh-keyscan -H ${{ secrets.DEPLOY_HOST }} > ~/.ssh/known_hosts
+          touch ~/.ssh/id_ed25519
+          echo "${{ secrets.DEPLOY_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 400 /home/runner/.ssh/id_ed25519
+          sftp ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/var/www/download/contribs <<< $'put ./pde/*'
