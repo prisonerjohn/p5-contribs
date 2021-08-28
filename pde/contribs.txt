@@ -1573,21 +1573,6 @@ type=library
 download=https://github.com/Transmedia-Gx/grab/releases/latest/download/Grab.zip
 
 library
-name=Augmenta for Processing
-authors=[Theoriz](https://www.theoriz.com/)
-url=https://github.com/Theoriz/augmenta-for-processing
-categories=I/O
-sentence=Allows you to use tracking data coming from [Augmenta](https://augmenta-tech.com/) systems.
-paragraph=Augmenta is a beaconless tracking technology for creative applications. Spaces or surfaces of any dimensions can be made interactive thanks to this solution. The technology has been designed for events as well as for permanent installations.
-version=1
-prettyVersion=2.0.0
-minRevision=0
-maxRevision=0
-id=269
-type=library
-download=http://augmenta-tech.com/libs/processing/Augmenta.zip
-
-library
 name=RiTa
 authors=[Daniel C. Howe](https://rednoise.org/daniel)
 url=https://rednoise.org/rita/
